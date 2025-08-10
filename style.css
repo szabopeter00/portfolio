@@ -63,6 +63,28 @@
   background-color: #fafafa;
 }
 
+#kor {
+  height: 52px;
+  clip-path: circle();
+  background-color: white;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in-out 0.2s;
+}
+
+#logo {
+  height: 50px;
+  clip-path: circle();
+  transition: ease-in-out 0.2s;
+}
+
+#logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .utana {
   height: 20vh;
 }

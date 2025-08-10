@@ -3,3 +3,76 @@
   padding: 0;
   box-sizing: border-box;
 }
+.hero {
+  background: url("images/bg.jpg") no-repeat center center fixed, #3f3f3f;
+  background-blend-mode: multiply;
+  background-size: cover;
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fafafa;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+
+.navbar a {
+  color: #fafafa;
+  text-decoration: none;
+  padding: 0 2rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: ease-in-out 0.2s;
+}
+
+.navbar a:hover {
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.navbar button {
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  background: transparent;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.navbar button:hover {
+  color: #3f3f3f;
+  background-color: #fafafa;
+}
+
+.utana {
+  height: 20vh;
+}
+/* .texture {
+  font-size: 10rem;
+  font-weight: bold;
+  background: url("images/cimhatter.jpg") no-repeat center center;
+  background-size: cover;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+} */

@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Kezdőlap */
 .hero {
   background: url("images/bg.jpg") no-repeat center center fixed, #3f3f3f;
   background-blend-mode: multiply;
@@ -115,11 +117,6 @@
   -webkit-user-select: none;
 }
 
-.utana {
-  height: 200vh;
-  background-color: #fafafa;
-}
-
 .hi::before {
   content: "Üdvözöllek";
   font-size: 2rem;
@@ -138,9 +135,77 @@
   vertical-align: middle;
 }
 
+.nyelvek {
+  height: 20vh;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nyelvek::before {
+  content: "";
+  position: absolute;
+  width: 25vh;
+  height: 20vh;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(39, 39, 39, 0.7),
+    rgba(126, 126, 126, 0.5),
+    rgba(196, 196, 196, 0.2),
+    rgba(250, 250, 250, 0)
+  );
+  z-index: 2;
+}
+.nyelvek::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 25vh;
+  height: 20vh;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1),
+    rgba(39, 39, 39, 0.7),
+    rgba(126, 126, 126, 0.5),
+    rgba(196, 196, 196, 0.2),
+    rgba(250, 250, 250, 0)
+  );
+  z-index: 2;
+}
+.slide {
+  display: inline-block;
+  animation: 15s slide linear infinite;
+}
+.slide:hover {
+  animation-play-state: paused;
+}
+.slide img {
+  margin: 0 100px;
+  width: 7vh;
+
+  /* Ne lehessen kijelölni */
+  user-select: none;
+  -webkit-user-select: none;
+}
+@media (max-width: 768px) {
+  .slide img {
+    margin: 0 25px;
+  }
+}
+.utana {
+  background: url("images/InkPaint4.jpg") no-repeat center center fixed, #3f3f3f;
+  background-blend-mode: multiply;
+  background-size: cover;
+
+  height: 150vh;
+}
+
+/* Animációk */
 @keyframes megjelenik {
   0% {
-    opacity: 0;
     transform: translateY(100px);
   }
   100% {
@@ -198,5 +263,13 @@
   100% {
     width: calc(100% + 10px);
     content: "Üdvözöllek";
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

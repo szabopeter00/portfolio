@@ -194,6 +194,12 @@
   .slide img {
     margin: 0 25px;
   }
+  .nyelvek::before {
+    width: 15vh;
+  }
+  .nyelvek::after {
+    width: 15vh;
+  }
 }
 .utana {
   background: url("images/InkPaint4.jpg") no-repeat center center fixed, #3f3f3f;

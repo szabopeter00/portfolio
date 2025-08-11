@@ -31,6 +31,10 @@
   display: inline-block;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
+
+  /* Ne lehessen kijelölni */
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .navbar a {
@@ -85,6 +89,10 @@
   height: 50px;
   clip-path: circle();
   transition: ease-in-out 0.2s;
+
+  /* Ne lehessen kijelölni */
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 #logo:hover {
@@ -98,6 +106,10 @@
   right: 25%;
   left: 50%;
   margin-left: -50px;
+
+  /* Ne lehessen kijelölni */
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .utana {

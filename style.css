@@ -6,7 +6,7 @@
 
 /* Kezdőlap */
 .hero {
-  background: url("images/bg.jpg") no-repeat center center fixed, #3f3f3f;
+  background: url("images/paint7.jpg") no-repeat center center fixed, #202020;
   background-blend-mode: multiply;
   background-size: cover;
 

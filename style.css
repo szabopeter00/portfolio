@@ -58,6 +58,13 @@
   font-weight: bold;
 }
 
+#email_icon {
+  width: 20px;
+  height: 20px;
+  margin: auto 8px;
+  display: inline-block;
+}
+
 .navbar button:hover {
   color: #3f3f3f;
   background-color: #fafafa;
@@ -97,13 +104,73 @@
   height: 200vh;
   background-color: #fafafa;
 }
-/* .texture {
-  font-size: 10rem;
-  font-weight: bold;
-  background: url("images/cimhatter.jpg") no-repeat center center;
-  background-size: cover;
 
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-} */
+.hi::before {
+  content: "Üdvözöllek";
+  font-size: 2rem;
+  animation: gepel 3s;
+}
+.hi::after {
+  content: "";
+  width: calc(100% + 8px);
+  animation: cursor 0.8s infinite;
+}
+
+#kapcsolat_icon {
+  font-size: 1rem;
+  margin-left: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 1px solid #fafafa;
+  }
+}
+@keyframes gepel {
+  0% {
+    width: 0;
+    content: "";
+  }
+  10% {
+    width: calc(100% + 1px);
+    content: "Ü";
+  }
+  20% {
+    width: calc(100% + 2px);
+    content: "Üd";
+  }
+  30% {
+    width: calc(100% + 3px);
+    content: "Üdv";
+  }
+  40% {
+    width: calc(100% + 4px);
+    content: "Üdvö";
+  }
+  50% {
+    width: calc(100% + 5px);
+    content: "Üdvöz";
+  }
+  60% {
+    width: calc(100% + 6px);
+    content: "Üdvözö";
+  }
+  70% {
+    width: calc(100% + 7px);
+    content: "Üdvözöl";
+  }
+  80% {
+    width: calc(100% + 8px);
+    content: "Üdvözöll";
+  }
+  90% {
+    width: calc(100% + 9px);
+    content: "Üdvözölle";
+  }
+  100% {
+    width: calc(100% + 10px);
+    content: "Üdvözöllek";
+  }
+}

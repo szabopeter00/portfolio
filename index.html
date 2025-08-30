@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <link rel="icon" href="images/user-id-card3.png" type="image/x-icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,20 +33,33 @@
           />
         </div>
         <nav>
+          <ul class="mobileview">
+            <i class="bxr bx-x" id="menu_icon" onclick="hideSidebar()"></i>
+            <li><a href="#" draggable="false">Kezdőlap</a></li>
+            <li><a href="#" draggable="false">Rólam</a></li>
+            <li><a href="#" draggable="false">Tanulmányok</a></li>
+            <li><a href="#" draggable="false">Projektek</a></li>
+            <li>
+              <a href="chatbot/chat.html" draggable="false">Beszélgess velem</a>
+            </li>
+            <li><a href="#" draggable="false">Kapcsolat</a></li>
+          </ul>
           <ul>
             <li><a href="#" draggable="false">Kezdőlap</a></li>
             <li><a href="#" draggable="false">Rólam</a></li>
             <li><a href="#" draggable="false">Tanulmányok</a></li>
             <li><a href="#" draggable="false">Projektek</a></li>
+            <li>
+              <a href="chatbot/chat.html" draggable="false">Beszélgess velem</a>
+            </li>
+            <li onclick="showSidebar()">
+              <i class="bxr bx-menu" id="menu_icon"></i>
+            </li>
           </ul>
         </nav>
-        <a href="#" draggable="false"
-          ><button>
-            Kapcsolat<i
-              class="bxr bx-envelope-alt"
-              id="kapcsolat_icon"
-            ></i></button
-        ></a>
+        <button draggable="false">
+          Kapcsolat<i class="bxr bx-envelope-alt" id="kapcsolat_icon"></i>
+        </button>
       </div>
       <h1 class="hi"></h1>
       <img
@@ -82,5 +95,7 @@
       </div>
     </div>
     <div class="utana"></div>
+
+    <script src="main.js"></script>
   </body>
 </html>

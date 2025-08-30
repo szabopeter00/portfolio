@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/user-id-card3.png" type="image/x-icon" />
+    <title>Szabó Péter | Portfólió</title>
+  </head>
+  <body>
+    <input id="userInput" type="text" placeholder="Írj üzenetet..." />
+    <button onclick="sendMessage()">Küldés</button>
+    <div id="chat"></div>
+
+    <script>
+      async function sendMessage() {
+        const input = document.getElementById("userInput");
+        const chatDiv = document.getElementById("chat");
+
+        const res = await fetch("http://localhost:3000/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: input.value }),
+        });
+
+        const data = await res.json();
+
+        chatDiv.innerHTML += `<p><b>Te:</b> ${input.value}</p>`;
+        chatDiv.innerHTML += `<p><b>Bot:</b> ${data.reply}</p>`;
+        input.value = "";
+      }
+    </script>
+
+    <script src="chat.js"></script>
+  </body>
+</html>

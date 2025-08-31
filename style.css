@@ -10,6 +10,7 @@ body {
   background-color: #000;
   min-height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /* Kezdőlap */

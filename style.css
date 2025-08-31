@@ -238,7 +238,7 @@
 /* Telefon nézet */
 @media (max-width: 768px) {
   .hero {
-    background-size: contain 100%;
+    background-size: auto 100%;
   }
 
   .slide img {

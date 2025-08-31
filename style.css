@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Alap fekete háttér */
 html,
 body {
   background-color: #000;
@@ -66,7 +67,7 @@ body {
   right: 0;
   height: 100dvh;
   min-width: 25%;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   z-index: 2;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
@@ -186,6 +187,7 @@ body {
   vertical-align: middle;
 }
 
+/* Programozási nyelvek */
 .nyelvek {
   height: 20vh;
   background-color: #fafafa;

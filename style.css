@@ -125,8 +125,10 @@ body {
 }
 
 .navbar button:hover {
-  color: #3f3f3f;
-  background-color: #fafafa;
+  color: #1b1b1b;
+  background-color: #6e695c;
+  border: 1px solid #4d4737;
+  box-shadow: 0 0 20px #4d4737;
 }
 
 #kor {
@@ -163,7 +165,7 @@ body {
   margin-left: -50px;
   opacity: 0;
   animation: megjelenik 1s ease forwards;
-  animation-delay: 2.5s;
+  animation-delay: 6s;
 
   /* Ne lehessen kijelölni */
   user-select: none;
@@ -171,14 +173,14 @@ body {
 }
 
 .hi::before {
-  content: "Üdvözöllek";
+  content: "Szabó Péter";
   font-size: 2rem;
-  animation: gepel 3s;
+  animation: gepel 6s;
 }
 .hi::after {
   content: "";
   width: calc(100% + 8px);
-  animation: cursor 0.8s infinite;
+  animation: cursor 0.8s 8;
 }
 
 #kapcsolat_icon {
@@ -300,49 +302,221 @@ body {
   }
 }
 @keyframes gepel {
-  0% {
+  1% {
     width: 0;
     content: "";
   }
-  10% {
+  2% {
     width: calc(100% + 1px);
     content: "Ü";
   }
-  20% {
+  3% {
     width: calc(100% + 2px);
     content: "Üd";
   }
-  30% {
+  4% {
     width: calc(100% + 3px);
     content: "Üdv";
   }
-  40% {
+  5% {
     width: calc(100% + 4px);
     content: "Üdvö";
   }
-  50% {
+  6% {
     width: calc(100% + 5px);
     content: "Üdvöz";
   }
-  60% {
+  7% {
     width: calc(100% + 6px);
     content: "Üdvözö";
   }
-  70% {
+  8% {
     width: calc(100% + 7px);
     content: "Üdvözöl";
   }
-  80% {
+  9% {
     width: calc(100% + 8px);
     content: "Üdvözöll";
   }
-  90% {
+  10% {
     width: calc(100% + 9px);
     content: "Üdvözölle";
   }
-  100% {
+  11% {
     width: calc(100% + 10px);
     content: "Üdvözöllek";
+  }
+  30% {
+    width: calc(100% + 10px);
+    content: "Üdvözöllek";
+  }
+  31% {
+    width: calc(100% + 9px);
+    content: "Üdvözölle";
+  }
+  32% {
+    width: calc(100% + 8px);
+    content: "Üdvözöll";
+  }
+  33% {
+    width: calc(100% + 7px);
+    content: "Üdvözöl";
+  }
+  34% {
+    width: calc(100% + 6px);
+    content: "Üdvözö";
+  }
+  35% {
+    width: calc(100% + 5px);
+    content: "Üdvöz";
+  }
+  36% {
+    width: calc(100% + 4px);
+    content: "Üdvö";
+  }
+  37% {
+    width: calc(100% + 3px);
+    content: "Üdv";
+  }
+  38% {
+    width: calc(100% + 2px);
+    content: "Üd";
+  }
+  39% {
+    width: calc(100% + 1px);
+    content: "Ü";
+  }
+  40% {
+    width: 0;
+    content: "";
+  }
+  41% {
+    width: calc(100% + 1px);
+    content: "A";
+  }
+  42% {
+    width: calc(100% + 2px);
+    content: "Az";
+  }
+  43% {
+    width: calc(100% + 3px);
+    content: "Az ";
+  }
+  44% {
+    width: calc(100% + 4px);
+    content: "Az é";
+  }
+  45% {
+    width: calc(100% + 5px);
+    content: "Az én";
+  }
+  46% {
+    width: calc(100% + 6px);
+    content: "Az én n";
+  }
+  47% {
+    width: calc(100% + 7px);
+    content: "Az én ne";
+  }
+  48% {
+    width: calc(100% + 8px);
+    content: "Az én nev";
+  }
+  49% {
+    width: calc(100% + 9px);
+    content: "Az én neve";
+  }
+  50% {
+    width: calc(100% + 10px);
+    content: "Az én nevem";
+  }
+  69% {
+    width: calc(100% + 10px);
+    content: "Az én nevem";
+  }
+  70% {
+    width: calc(100% + 9px);
+    content: "Az én neve";
+  }
+  71% {
+    width: calc(100% + 8px);
+    content: "Az én nev";
+  }
+  72% {
+    width: calc(100% + 7px);
+    content: "Az én ne";
+  }
+  73% {
+    width: calc(100% + 6px);
+    content: "Az én n";
+  }
+  74% {
+    width: calc(100% + 5px);
+    content: "Az én ";
+  }
+  75% {
+    width: calc(100% + 4px);
+    content: "Az é";
+  }
+  76% {
+    width: calc(100% + 3px);
+    content: "Az ";
+  }
+  77% {
+    width: calc(100% + 2px);
+    content: "Az";
+  }
+  78% {
+    width: calc(100% + 1px);
+    content: "A";
+  }
+  79% {
+    width: 0;
+    content: "";
+  }
+  80% {
+    width: calc(100% + 1px);
+    content: "S";
+  }
+  82% {
+    width: calc(100% + 2px);
+    content: "Sz";
+  }
+  84% {
+    width: calc(100% + 3px);
+    content: "Sza";
+  }
+  86% {
+    width: calc(100% + 4px);
+    content: "Szab";
+  }
+  88% {
+    width: calc(100% + 5px);
+    content: "Szabó";
+  }
+  90% {
+    width: calc(100% + 6px);
+    content: "Szabó ";
+  }
+  92% {
+    width: calc(100% + 7px);
+    content: "Szabó P";
+  }
+  94% {
+    width: calc(100% + 8px);
+    content: "Szabó Pé";
+  }
+  96% {
+    width: calc(100% + 9px);
+    content: "Szabó Pét";
+  }
+  98% {
+    width: calc(100% + 10px);
+    content: "Szabó Péte";
+  }
+  100% {
+    width: calc(100% + 11px);
+    content: "Szabó Péter";
   }
 }
 @keyframes slide {
